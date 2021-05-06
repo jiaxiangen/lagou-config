@@ -1,20 +1,6 @@
-Spring:
-  application:
-    name: lagou-cloud-con
-  cloud:
-    gateway:
-      routes:
-        - id: service-page-router
-          uri: lb://lagou-service-page
-          predicates:
-            - Path=/page/**
-
-        - id: service-product-router
-          uri: lb://lagou-service-product
-          predicates:
-            - Path=/product/**
-          filters:
-            - StripPrefix=1
-
+mysql:
+  user: student
+person:
+  name: jia
 
 
