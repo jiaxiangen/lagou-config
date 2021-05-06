@@ -1,8 +1,6 @@
-server:
-  port: 9300
 Spring:
   application:
-    name: lagou-cloud-gateway
+    name: lagou-cloud-con
   cloud:
     gateway:
       routes:
@@ -17,16 +15,6 @@ Spring:
             - Path=/product/**
           filters:
             - StripPrefix=1
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://LagouCloudEurekaServerA:9200/eureka/,http://LagouCloudEurekaServerB:9201/eureka/
-  instance:
-
-    prefer-ip-address: true
-
-    instance-id: ${spring.cloud.client.ipaddress}:${spring.application.name}:${server.port}:@project.version@
 
 
 
