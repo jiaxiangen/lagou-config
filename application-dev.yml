@@ -1,4 +1,3 @@
-mysql:
-  user: student
-person:
-  name: jia
+sys:
+  weChat:
+    appid: 1111111111111-default
